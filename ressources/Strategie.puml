@@ -1,0 +1,23 @@
+@startuml
+
+abstract class Personnage
+interface TechniqueCombat
+class Troll
+class Reine
+class Chevalier
+class Roi
+class ArcEtFleche
+class Epee
+class Couteau
+
+Personnage <|.. Troll
+Personnage <|.. Reine
+Personnage <|.. Chevalier
+Personnage <|.. Roi
+TechniqueCombat <|-- Personnage
+TechniqueCombat <|.. ArcEtFleche
+TechniqueCombat <|.. Epee
+TechniqueCombat <|.. Couteau
+
+
+@enduml

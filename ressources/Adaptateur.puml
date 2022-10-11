@@ -1,0 +1,26 @@
+@startuml
+
+interface Dessinable {
++ dessiner()
+}
+class Rectangle {
++ dessiner()
+}
+class Cercle {
++ dessiner()
+}
+
+class AdaptateurTexte {
++ dessiner()
+}
+
+class TextDrawer {
++ drawText(String s)
+}
+
+Dessinable <|.. Rectangle
+Dessinable <|.. Cercle
+Dessinable <|.. AdaptateurTexte
+TextDrawer <-- AdaptateurTexte
+
+@enduml
